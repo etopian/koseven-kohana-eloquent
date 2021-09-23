@@ -1,4 +1,4 @@
-# Koseven / Kohana Laravel Eloquent ORM
+# Koseven / Kohana Laravel Eloquent ORM Module
 
 A simple module which allows you to add Laravel ORM Eloquent to your Kohana / Koseven install with minimal effort.
 
