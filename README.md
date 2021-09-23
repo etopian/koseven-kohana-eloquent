@@ -1,15 +1,36 @@
-# koseven-kohana-eloquent
+# Koseven / Kohana Laravel Eloquent ORM
 
 A simple module which allows you to add Laravel ORM Eloquent to your Kohana / Koseven install.
 
 Allows you to completely replace Kohana's ORM with Laravel's ORM. Reads the configuration for the database from conf/database.php that Kohana's ORM uses.
+
+Add Kohana database to your vendors.
+
+First upgrade your deps by updating your composer.json to upgrade the following, this may break tests as you are upgrading the phpunit, phpcov, and db unit to latest:
+```
+   "require-dev": {
+-    "phpunit/phpunit": "^6.0|^7.0",
+-    "phpunit/dbunit":"^3.0",
+-    "phpunit/phpcov": "^4.0",
++    "phpunit/phpunit": "*",
++    "phpunit/dbunit":"*",
++    "phpunit/phpcov": "*",
+     "php-coveralls/php-coveralls": "^2.0"
+   },
+```
+Now install illuminate/database.
 
 ```
 composer require illuminate/database
 ```
 
 Copy this module to the modules directory and enable it in your bootstrap.php
-
+```php
+Kohana::modules([
+...
+  'eloquent' => MODPATH.'eloquent'
+...
+```
 Create a new directory application/classes/Models to hold your ORM models.
 
 Create a new model for instance a application/classes/Models/File.php
