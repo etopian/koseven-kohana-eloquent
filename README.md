@@ -1,6 +1,6 @@
 # Koseven / Kohana Laravel Eloquent ORM
 
-A simple module which allows you to add Laravel ORM Eloquent to your Kohana / Koseven install.
+A simple module which allows you to add Laravel ORM Eloquent to your Kohana / Koseven install with minimal effort.
 
 Allows you to completely replace Kohana's ORM with Laravel's ORM. Reads the configuration for the database from conf/database.php that Kohana's ORM uses.
 
