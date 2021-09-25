@@ -54,7 +54,8 @@ class Models_Files extends Model
 You can also use the Capsule class to access the query builder.
 
 See:
-https://github.com/illuminate/database
+* https://github.com/illuminate/database
+* https://laravel.com/docs/8.x/eloquent
 
 ```php
 use Illuminate\Database\Capsule\Manager as Capsule;
