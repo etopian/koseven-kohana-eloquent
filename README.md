@@ -44,7 +44,7 @@ You can use the model in your controller by class name, i.e. new Models_Files()
 <?php
 use Illuminate\Database\Eloquent\Model;
 
-class Models_Files extends Model
+class Models_File extends Model
 {
     protected $table = 'files';
     public $timestamps = false;
