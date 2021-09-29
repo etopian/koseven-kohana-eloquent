@@ -4,10 +4,10 @@ A simple module which allows you to add Laravel ORM Eloquent to your Kohana / Ko
 
 Allows you to completely replace Kohana's ORM with Laravel's ORM or make it available to use in addition to Kohana's ORM. Reads the configuration for the database from conf/database.php that Kohana's ORM uses.
 
-Add Kohana database to your vendors.
+Add Laravel's eloquent database to your vendors.
 
 First upgrade your deps by updating your composer.json to upgrade the following, this may break tests as you are upgrading the phpunit, phpcov, and db unit to latest:
-```
+```diff
    "require-dev": {
 -    "phpunit/phpunit": "^6.0|^7.0",
 -    "phpunit/dbunit":"^3.0",
