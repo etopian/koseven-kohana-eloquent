@@ -66,5 +66,10 @@ $results = Capsule::select('select * from users where id = ?', [1]);
 
 ```
 
+# Datatables
+You can use the Capsule adapter with this Datatables generator for Datatables.js
+
+https://github.com/n1crack/datatables
+
 
 
